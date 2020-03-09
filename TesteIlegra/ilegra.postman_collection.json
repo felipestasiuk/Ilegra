@@ -1,0 +1,250 @@
+{
+	"info": {
+		"_postman_id": "95e6155c-5ba1-422f-93e0-515900becf0b",
+		"name": "ilegra",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/api/ilegra/customer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/ilegra/customer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"ilegra",
+						"customer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/ilegra/salesman",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/ilegra/salesman",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"ilegra",
+						"salesman"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/ilegra/item",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/ilegra/item",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"ilegra",
+						"item"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/ilegra/sale",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/ilegra/sale",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"ilegra",
+						"sale"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/ilegra/customer/insert/:cnpj/:name/:area",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/ilegra/customer/insert/:cnpj/:name/:area",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"ilegra",
+						"customer",
+						"insert",
+						":cnpj",
+						":name",
+						":area"
+					],
+					"variable": [
+						{
+							"key": "cnpj",
+							"value": "2345675434544345"
+						},
+						{
+							"key": "name",
+							"value": "Jose da Silva"
+						},
+						{
+							"key": "area",
+							"value": "Rural"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/ilegra/salesman/insert/:cpf/:name/:salary",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/ilegra/salesman/insert/:cpf/:name/:salary",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"ilegra",
+						"salesman",
+						"insert",
+						":cpf",
+						":name",
+						":salary"
+					],
+					"variable": [
+						{
+							"key": "cpf",
+							"value": "1234567891234"
+						},
+						{
+							"key": "name",
+							"value": "Pedro"
+						},
+						{
+							"key": "salary",
+							"value": "50000"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/ilegra/item/insert/:itemCode/:quantity/:price/:saleCode",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/ilegra/item/insert/:itemCode/:quantity/:price/:saleCode",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"ilegra",
+						"item",
+						"insert",
+						":itemCode",
+						":quantity",
+						":price",
+						":saleCode"
+					],
+					"variable": [
+						{
+							"key": "itemCode",
+							"value": "1"
+						},
+						{
+							"key": "quantity",
+							"value": "10"
+						},
+						{
+							"key": "price",
+							"value": "100"
+						},
+						{
+							"key": "saleCode",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/ilegra/sale/insert/:saleCode/:salesmanName",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/ilegra/sale/insert/:saleCode/:salesmanName",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"ilegra",
+						"sale",
+						"insert",
+						":saleCode",
+						":salesmanName"
+					],
+					"variable": [
+						{
+							"key": "saleCode",
+							"value": "10"
+						},
+						{
+							"key": "salesmanName",
+							"value": "Pedro"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
